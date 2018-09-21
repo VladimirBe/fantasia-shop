@@ -12,19 +12,19 @@
 <body>
   <section id="header">
     <div class="top container">
-      Мой Онлайн-Магазин
+      Fantasia shop
     </div>
     <div class="top-bl">
       <div class="container">
         <div class="cart">
           {% with total_items=cart|length %}
             {% if cart|length > 0 %}
-              Ваша корзина:
+              Your cart:
               <a href="{% url "cart:CartDetail" %}">
-                {{ total_items }} тов. {{ cart.get_total_price }} руб.
+                {{ total_items }} prod. {{ cart.get_total_price }} RON.
               </a>
             {% else %}
-              Корзина пустая
+              Empty cart
             {% endif %}
           {% endwith %}
         </div>
